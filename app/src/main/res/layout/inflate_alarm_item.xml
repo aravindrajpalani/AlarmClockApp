@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp2"
+
+        card_view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_gradient"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/settings"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp15"
+                        android:text="12:30 PM"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/grey2"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_compat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp45" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/ic_action_settings" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/anim"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="(Name)"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey2" />
+
+                <RelativeLayout
+                    android:id="@+id/anim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp30">
+
+                    <ImageView
+                        android:id="@+id/sleepbed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sleep_bed"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/sleepbody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:src="@drawable/sleep_body"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="MO TU WE TH FR SA SU"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/grey_69" />
+
+
+            <TextView
+                android:id="@+id/remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="Time Remaining"
+                android:textColor="@color/grey_cc"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_cc" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+</RelativeLayout>

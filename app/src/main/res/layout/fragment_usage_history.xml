@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/adView">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="January,2017"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll1"
+
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="No data"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey_cc"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/monthRecycler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="January,2017"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll2"
+
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="No data"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey_cc"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/monthRecycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="January,2017"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll3"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="No data"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey_cc"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/monthRecycler3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id4"></com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

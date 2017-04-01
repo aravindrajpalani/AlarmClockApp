@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "136551315570",
+    "firebase_url": "https://everyday-alarm-clock.firebaseio.com",
+    "project_id": "everyday-alarm-clock",
+    "storage_bucket": "everyday-alarm-clock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136551315570:android:70364a8518db5dac",
+        "android_client_info": {
+          "package_name": "com.sleep.shortsleepalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136551315570-m1vj8e79rgfei0vu92b9kv2hm7iu8nth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4x1tZruQREYkAZNp_I8ydHwm5zbS-d-Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dp10"
+    android:background="#3d445a"
+    android:padding="@dimen/dp10">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3d445a"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/alarmname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Morning"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/alarmtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:singleLine="true"
+            android:padding="@dimen/dp10"
+            android:text="05:00 AM"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/snooze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp2"
+                android:background="@color/colorPrimary"
+                 android:text="Snooze"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+            <Button
+                android:id="@+id/dismiss"
+                android:layout_margin="@dimen/dp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Dismiss"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

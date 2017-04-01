@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer_save"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer_save"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="vertical"
+          >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:text="Sleep Duration"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/grey2" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="00 hr 00 min"
+                    android:textSize="@dimen/sp28"
+                    android:textColor="@color/grey2"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/trash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_toRightOf="@+id/txt_time"
+                    android:src="@drawable/ic_trash" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/five_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_states"
+                        android:text="+5 min"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/ten_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_states"
+                        android:text="+10 min"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/thirty_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_states"
+                        android:text="+30 min"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/five_hr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_states"
+                        android:text="+5 hr"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/seven_hr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_states"
+                        android:text="+7 hr"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/grey_cc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:text="@string/name_alarm"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/grey2" />
+
+            <EditText
+                android:id="@+id/edt_txt_alarm_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:inputType="textNoSuggestions"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/grey2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/grey_cc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:text="Alarm Tone"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/grey2" />
+
+            <TextView
+                android:id="@+id/choosesong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="Choose song.."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/grey2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/grey_cc" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/footer_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/save_alarm"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+

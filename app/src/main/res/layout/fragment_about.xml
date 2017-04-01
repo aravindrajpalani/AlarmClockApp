@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp15"
+        android:text="Everyday Alarm Clock"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp15"
+        android:text="App Version"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/versionname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="App Version"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/grey2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="About App "
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="Everyday Alarm Clock app is a Alarm Clock app used to set multiple alarms for specific time"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/grey2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+
+        android:text="Developer"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="@dimen/dp25"
+        android:drawableRight="@drawable/ic_send"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
+        android:text="Send Feedback"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/grey2" />
+</LinearLayout>
